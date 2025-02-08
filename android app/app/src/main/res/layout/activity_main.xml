@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Mango Disease Classification"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#737373"
+        android:layout_marginTop="40dp" />
+
+    <!-- Image Upload Box -->
+    <ImageView
+        android:layout_width="340sp"
+        android:layout_height="340sp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/image_view"
+        android:src="@drawable/upload"
+        android:layout_below="@id/title"
+        android:layout_marginTop="40dp"/>
+
+    <!-- Classification Results -->
+    <TextView
+        android:id="@+id/classified"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Classification Results :"
+        android:textSize="18sp"
+        android:textColor="#737373" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/classified"
+        android:layout_centerHorizontal="true"
+        android:text="Result Here"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textColor="#737373"
+        android:layout_marginTop="10dp" />
+
+    <!-- Action Buttons -->
+    <LinearLayout
+        android:id="@+id/action_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/result"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp">
+
+        <!-- Take Photo Button -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginEnd="80dp"
+            android:gravity="center"
+            android:id="@+id/button">
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:src="@drawable/camera"
+                android:contentDescription="Take Photo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Take Photo"
+                android:textSize="14sp"
+                android:textColor="#737373"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <!-- Gallery Button -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:id="@+id/button2">
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:src="@drawable/gallery"
+                android:contentDescription="Gallery" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Gallery"
+                android:textSize="14sp"
+                android:textColor="#737373"
+                android:gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
