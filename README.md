@@ -5,8 +5,8 @@ Machine learning-based Android application to detect and classify diseases in ma
 
 ## Screenshots
 <p align="center">
-  <img src="screenshoot/a.jpg" alt="App Screenshot1" width="200"/>
-  <img src="screenshoot/b.jpg" alt="App Screenshot2" width="200"/>
+  <img src="screenshot/a.jpg" alt="App Screenshot1" width="200"/>
+  <img src="screenshot/b.jpg" alt="App Screenshot2" width="200"/>
 </p>
 
 
